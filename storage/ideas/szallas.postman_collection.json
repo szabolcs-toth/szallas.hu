@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "a34582b8-7f27-4a2c-86e7-32afbd98daf0",
+		"name": "szallas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9777531"
+	},
+	"item": [
+		{
+			"name": "companies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1/api/companies?companyIds[]=2&companyIds[]=3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"api",
+						"companies"
+					],
+					"query": [
+						{
+							"key": "companyIds[]",
+							"value": "2"
+						},
+						{
+							"key": "companyIds[]",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "companies",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"companyName\": \"Magna Lorem Inc.2222\",\r\n    \"companyRegistrationNumber\": \"896098-0855\",\r\n    \"companyFoundationDate\": \"1991-10-22\",\r\n    \"country\": \"Philippines\",\r\n    \"zipCode\": \"60934\",\r\n    \"city\": \"Bahawalnagar\",\r\n    \"streetAddress\": \"6753 Sit Street\",\r\n    \"latitude\": 22222.69671,\r\n    \"longitude\": -101.066,\r\n    \"companyOwner\": \"Hamilton Pearson\",\r\n    \"employees\": 5555555555,\r\n    \"activity\": \"Building Industry\",\r\n    \"active\": \"false\",\r\n    \"email\": \"metus.facilisis@Proinsedturpis.cametus.facilisis@Proinsedturpis.cametus.facilisis@Proinsedturpis.cametus.facilisis@Proinsedturpis.cametus.facilisis@Proinsedturpis.cametus.facilisis@Proinsedturpis.cametus.facilisis@Proinsedturpis.ca\",\r\n    \"password\": \"sem,\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1/api/companies",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"api",
+						"companies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "companies",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"companyId\": 2,\r\n    \"companyName\": \"Magna Lorem Inc.2222\",\r\n    \"companyRegistrationNumber\": \"896098-0855\",\r\n    \"companyFoundationDate\": \"1991-10-22\",\r\n    \"country\": \"Philippines\",\r\n    \"zipCode\": \"60934\",\r\n    \"city\": \"Bahawalnagar\",\r\n    \"streetAddress\": \"6753 Sit Street\",\r\n    \"latitude\": 22222.69671,\r\n    \"longitude\": -101.066,\r\n    \"companyOwner\": \"Hamilton Pearson\",\r\n    \"employees\": 5555555555,\r\n    \"activity\": \"Building Industry\",\r\n    \"active\": \"false\",\r\n    \"email\": \"metus.facilisis@Proinsedturpis.cametus.facilisis@Proinsedturpis.cametus.facilisis@Proinsedturpis.cametus.facilisis@Proinsedturpis.cametus.facilisis@Proinsedturpis.cametus.facilisis@Proinsedturpis.cametus.facilisis@Proinsedturpis.ca\",\r\n    \"password\": \"sem,\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1/api/companies",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"api",
+						"companies"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
